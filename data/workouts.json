@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Push-ups",
+    "duration": "10 min",
+    "calories": 100
+  },
+  {
+    "name": "dead lift",
+    "duration": "30",
+    "type": "Strength"
+  },
+  {
+    "name": "Bicep curl",
+    "duration": "15",
+    "type": "Strength"
+  },
+  {
+    "name": "jumping jacks",
+    "duration": "20",
+    "type": "cardio"
+  }
+]
