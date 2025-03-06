@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plans</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>WORKOUT PLANS</h1>
+        <a href="/workouts/add" class="btn primary">➕ ADD NEW WORKOUT</a>
+        <a href="/" class="btn home">🏠 HOME</a>
+    </header>
+
+    <div class="container">
+        <h2>Your Workouts 💪</h2>
+
+        <% if (workouts.length > 0) { %>
+            <div class="workout-list">
+                <% workouts.forEach(workout => { %>
+                    <div class="workout-item">
+                        <span><%= workout.name %></span>
+                        <span><%= workout.duration %> min</span>
+                    </div>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <p class="empty-message">No workouts added yet. Add a new one! 🏋️‍♂️</p>
+        <% } %>
+
+    </div>
+
+    <footer>
+        <p>Fitness Tracker | Stay Fit 💪</p>
+    </footer>
+
+</body>
+</html>

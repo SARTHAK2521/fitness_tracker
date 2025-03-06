@@ -1,0 +1,222 @@
+/* 🌟 Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 🌟 Header */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 25px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* 🌟 Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 123, 255, 0.3);
+    font-size: 18px;
+}
+
+.btn.primary { background-color: #007bff; }
+.btn.secondary { background-color: #28a745; }
+.btn.diet { background-color: #20c997; }
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* 🌟 Features Section */
+.features {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 🌟 Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.feature-card {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* 🌟 List Container (Workouts & Diets) */
+.list-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-top: 2px solid #ccc;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* 🌟 Empty Message */
+.empty-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* 🌟 Form Container (For Add Workout & Add Diet) */
+.form-container {
+    max-width: 400px;
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+}
+
+/* 🌟 Form Heading */
+.form-container h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* 🌟 Input Fields */
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2a2a2a;
+    color: white;
+    box-shadow: 0 3px 5px rgba(0, 123, 255, 0.2);
+    text-align: center;
+}
+
+.form-container input::placeholder {
+    color: #bbb;
+}
+
+/* 🌟 Form Button */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #20c997);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 123, 255, 0.3);
+}
+
+.form-container button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* 🌟 Back Link */
+.form-container a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* 🌟 Error Message */
+.error-message {
+    color: #ff4d4d;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Footer - Fixed at Bottom */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}

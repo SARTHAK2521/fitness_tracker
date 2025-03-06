@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plans</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DIET PLANS</h1>
+        <a href="/diet/add" class="btn primary">➕ ADD NEW DIET</a>
+        <a href="/" class="btn home">🏠 HOME</a>
+    </header>
+
+    <div class="container">
+        <h2>Your Diet Plans 🍏</h2>
+
+        <% if (diets.length > 0) { %>
+            <div class="diet-list">
+                <% diets.forEach(diet => { %>
+                    <div class="diet-item">
+                        <span><%= diet.name %></span>
+                        <span><%= diet.calories %> Kcal</span>
+                    </div>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <p class="empty-message">No diets added yet. Add a new one! 🍽️</p>
+        <% } %>
+
+    </div>
+
+    <footer>
+        <p>Fitness Tracker | Stay Healthy 💪</p>
+    </footer>
+
+</body>
+</html>
